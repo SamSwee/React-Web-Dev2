@@ -10,7 +10,7 @@ function App() {
   const [widgets, setWidgets] = useState([
     { id: new Date().getTime(), component: <ClockWidget />, area: 'main-widget', name: "Date and Time" },
     { id: new Date().getTime() + 2, component: <CalendarWidget />, area: 'right-widget', name: "Calendar" },
-    { id: new Date().getTime() + 1, component: <TimerWidget />, area: 'left-widget', name: "TImer" },
+    { id: new Date().getTime() + 1, component: <TimerWidget />, area: 'left-widget', name: "Timer" },
   ])
   const [showWidgetModal, setShowWidgetModal] = useState(false)
   const [selectedWidgetArea, setSelectedWidgetArea] = useState('')
@@ -43,10 +43,6 @@ function App() {
           if (widget.area === 'none-widget') {
             return (
               <Draggable>
-                <div className='none-widget' >
-                  {widgets.length > 0 && widgets.map((widget, index) => {
-                    if (widget.area === 'none-widget') {
-                      return (
                         <div style={{ padding: 10,}} className='widget-container' >
                           <div style={{ marginBottom: 10 }}>
                             <select value={widget.area}
@@ -70,10 +66,6 @@ function App() {
                           </div>
                           {widget.component}
                         </div>
-                      )
-                    }
-                  })}
-                </div>
               </Draggable>
             )
           }
