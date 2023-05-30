@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ClockWidget from '../widgets/ClockWidget'
-import ReminderListWidget from '../widgets/ReminderWidget'
+import ReminderListWidget from '../widgets/ReminderListWidget'
 import TimerWidget from '../widgets/TimerWidget'
 import CalendarWidget from '../widgets/CalendarWidget'
 
@@ -36,8 +36,8 @@ export default function WidgetGalleryModal({ setShowWidgetModal, selectedWidgetA
                                             setWidgets([...widgets, {
                                                 id: new Date().getTime(),
                                                 component: widget.component,
-                                                area: selectedWidgetArea, 
-                                                name: widget.name
+                                                area: selectedWidgetArea,
+				  name:widget.name
                                             }])
                                             setShowWidgetModal(false)
                                         } else {
