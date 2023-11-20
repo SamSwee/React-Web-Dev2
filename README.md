@@ -15,4 +15,6 @@ In the third quest, users were taught to create a planner app with widgets.
 https://github.com/SamSwee/React-Web-Dev2/assets/12713419/4723aafd-aacc-46ad-8503-a8ff62b9564b
 
 This quest led to users being inspired to build other kinds of widgets, such as
-- finance tracker (https://neogret-plannerwidget.netlify.app/)
+- finances tracker (https://neogret-plannerwidget.netlify.app/)
+- mood tracker (https://ajayfaul-plannerwidget.netlify.app/)
+- timezone converter (https://anqa-plannerwidget.netlify.app/)
