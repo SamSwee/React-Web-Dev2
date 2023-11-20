@@ -1,5 +1,7 @@
 # React-Web-Dev2
 This repository contains the completed files for StackUp's Web Development with React II campaign. 
+![image](https://github.com/SamSwee/React-Web-Dev2/assets/12713419/16b7078a-a477-4b5e-bbb6-c59d1597b882)
+
 
 In the first quest, users were taught how to create a calculator app.
 
